@@ -1,0 +1,250 @@
+.Browse-Diamonds {
+  font-size: 12px;
+  border-bottom: 1px solid;
+  padding: 0;
+}
+.main-btn-setting button span {
+  color: black;
+  font-size: 12px;
+}
+
+.main-btn-setting button p {
+  font-size: 12px;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.details-page .shape-main .shape {
+  margin: 2px;
+  cursor: pointer;
+  max-width: 45px;
+}
+.loading {
+  text-align: center;
+  font-size: 20px;
+}
+/* ================18-11-2023========= */
+
+/* ================18-11-2023========= */
+
+.logo {
+  float: left;
+  margin: 0;
+  padding: 20px;
+}
+.center {
+  text-align: center;
+}
+
+
+.search-box {
+  float: left;
+  width: 60%;
+  padding: 25px;
+}
+.search-box input {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+}
+.product-item img {
+  width: 100px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ====================================my ccs *=====================================*/
+
+.main-content-p {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.slider {
+  width: 50%;
+  height: 8px;
+  background-color: #cdd9ed;
+  margin-top: 20px;
+}
+
+.slider .thumb {
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #275efe;
+  margin-top: -8px;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.customers-table {
+  margin-top: 60px;
+}
+table#customers tr th {
+  text-align: center;
+}
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+.main-content .values {
+  margin-top: 40px;
+}
+.resultdata.setings-Page-img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  position: relative;
+}
+.all-pages-data .all-img1,
+.all-pages-data .all-img2,
+.all-pages-data .all-img3,
+.all-pages-data .all-img4 {
+  max-width: 220px;
+  max-height: 220px;
+}
+.all-card-four-color span {
+  background-color: #ddd;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.all-card-four-color span:hover {
+  box-shadow: 0 0 0 2px #310f4c;
+}
+.all-card-four-color span:nth-child(1) {
+  background-color: #efefee;
+}
+.all-card-four-color span:nth-child(2) {
+  background-color: #f2dda5;
+}
+.all-card-four-color span:nth-child(3) {
+  background-color: #f5c1a3;
+}
+.all-card-four-color span:nth-child(4) {
+  background-color: #dcdcdb;
+}
+.all-card-four-color {
+  display: flex;
+  justify-content: center;
+}
+.all-card-four-color > span {
+  margin: 15px 6px 0;
+}
+.all-img2,
+.all-img3,
+.all-img4 {
+  display: none;
+}
+.all-card-four-color span:nth-child(1):hover .all-img2 {
+  display: block;
+}
+.filter-metal,
+.multiple-product-filter {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.multiple-product-filter {
+  width: 100% !important;
+}
+.filter-metal span,
+.multiple-product-filter span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.multiple-product-filter span {
+  background: #dcdcdb;
+}
+.filter-metal span:nth-child(1) {
+  background-color: #dcdcdb;
+}
+.filter-metal span:nth-child(2) {
+  background-color: #dcdcdb;
+}
+.filter-metal span:nth-child(3) {
+  background-color: #f2dda5;
+}
+.filter-metal span:nth-child(4) {
+  background-color: #f5c1a3;
+}
+table#customers tbody a {
+  display: contents;
+  width: 100%;
+}
+
+/* ======= */
+/* =============== */
+/* .sweet-loading {
+  text-align: center;
+  margin: 0 auto;
+} */
+.sweet-loading > span {
+  text-align: center !important;
+  margin: 0 auto !important; 
+  position: fixed !important;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 44%;
+}
+
+
+
+
+
+

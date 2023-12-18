@@ -1,0 +1,2221 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.App {
+  overflow: hidden;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: Neue Einstellung;
+  overflow-x: hidden;
+  background: #f6f4f2;
+}
+body a,
+body input {
+  text-decoration: none;
+  outline: none;
+}
+p {
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #232323;
+  font-family: "Neue Einstellung";
+}
+h1,
+h2,
+h3 {
+  font-size: 55px;
+  letter-spacing: 1px;
+  line-height: normal;
+  color: #232323;
+  font-weight: bold;
+  font-family: "Neue Einstellung";
+}
+h2 {
+  font-size: 40px !important;
+}
+h3 {
+  font-size: 34px !important;
+}
+h4 {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #232323;
+  font-weight: 600;
+}
+@font-face {
+  font-family: Neue Einstellung;
+  src: url(../fonts/Neue\ Einstellung\ Bold.ttf);
+ 
+}
+
+@font-face {
+  font-family: Neue Einstellung;
+  src: url(../fonts/Neue\ Einstellung\ Bold.woff);
+  
+}
+@font-face {
+  font-family: Neue Einstellung;
+  src: url(../fonts/Neue\ Einstellung\ Bold.woff2);
+ 
+}
+@font-face {
+  font-family: Neue Einstellung;
+  src: url(../fonts/NeueEinstellung-Regular.eot);
+  
+}
+@font-face {
+  font-family: Neue Einstellung;
+  src: url(../fonts/NeueEinstellung-Regular.ttf);
+
+}
+@font-face {
+  font-family: Neue Einstellung;
+  src: url(../fonts/NeueEinstellung-Regular.woff);
+  
+}
+@font-face {
+  font-family: Neue Einstellung;
+  src: url(../fonts/NeueEinstellung-Regular.woff2);
+  
+}
+.button {
+  background: #310f4c;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  padding: 13px 35px;
+  display: inline-block;
+  border: none;
+  font-weight: 300;
+
+}
+/* header start */
+.header {
+  padding-top: 20px;
+}
+nav a {
+  color: #232323;
+  font-size: 16px;
+  letter-spacing: 0;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+.header-top,
+.header-icons,
+nav.nav > ul,
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-contact-us,
+.header-logo,
+.header-icons {
+  width: 33%;
+}
+.header-icons {
+  padding-left: 170px;
+  position: relative;
+}
+
+.header-icons .search-icon > input.search-close,.header-icons .search-icon > input.search-open {
+  width: 0;
+  position: absolute;
+  top: 32px;
+  right: 0;
+  border: none;
+  transition: all .3s ease-in-out;
+}
+.header-icons .search-icon > input.search-open {
+  width: 200px;
+  transition: all .3s ease-in-out;
+  border: 1px solid;
+  padding: 5px;
+}
+.header-icons .bell-icon {
+  margin-right: 10px;
+  position: relative;
+}
+.header-icons .bag-icon{
+  position: relative;
+}
+.header-icons .bag-icon > a > span {
+  position: absolute;
+  left: 22px;
+  font-size: 15px;
+  top: 10px;
+}
+.header-icons .bell-icon > a >span {
+  position: absolute;
+  background: red;
+  color: #fff;
+  width: 19px;
+  height: 19px;
+  font-size: 10px;
+  text-align: center;
+  top: -9px;
+  right: -8px;
+  border-radius: 50px;
+  padding: 3px 0 0;
+  border: 1px solid #fff;
+}
+
+.header-logo {
+  max-width: 145px;
+}
+.header-icons a {
+  color: #310f4c;
+  display: flex;
+}
+.header-icons a svg {
+  width: 20px;
+  height: 20px;
+}
+nav.nav > ul {
+  column-gap: 50px;
+  justify-content: center;
+}
+nav.nav {
+    padding-top: 30px;
+}
+/* nav */
+header.header .container{
+  position: relative;
+}
+nav.mobile-nav{
+  display: none;
+}
+.engagement-ring {
+  padding-top: 20px;
+  display: none;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  background: #fff;
+  padding: 0px 0 0%;
+  z-index: 1;
+  align-items: start;
+  border-top: 1px solid #e2e2e2;
+}
+.nav > ul > li:hover .engagement-ring {
+  display: flex;
+}
+.engagement-ring ul > li > i {
+  max-width: 16px;
+  margin-right: 10px;
+}
+.engagement-ring ul > li > a{
+
+}
+.engagement-ring.flex:before {
+  content: "";
+  background: #fff;
+  position: absolute;
+  left: -50vw;
+  right: -50vw;
+  width: 500vw;
+  height: 100%;
+  z-index: -1;  
+  top: 0;
+}
+.engagement-ring > ul > li:first-child > a{
+  font-size: 14px ;
+  padding-bottom: 15px;
+  display: inline-block;
+  padding-left: 0;
+}
+
+.engagement-ring ul > li > a {
+    padding-bottom: 18px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.nav ul.nav-img{
+   width: 200px;
+}
+
+.engagement-ring > ul {
+  width: calc(100%/4 - 30px);
+  margin: 15px;
+}
+.iconKing{
+  margin-top: -10px;
+  margin-bottom: -7px;
+  margin-right: 5px;
+  mix-blend-mode: multiply;
+}
+.iconKing {
+  background-image: url(https://css.brilliantearth.com/static/img/navgation/king/iconking-new3.png?v6);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 120px auto;
+  display: inline-block;
+  height: 28px;
+  width: 28px;
+  min-width: 28px;
+}
+.iconKing-setting{
+  background-position: -2px -204px;
+}
+.iconKing-Diamond {
+  background-position: -2px -31px;
+}
+.iconKing-GrownDiamond {
+  background-position: -2px -175px;
+}
+.iconKing-Gemstone {
+  background-position: -1px -148px;
+}
+.iconKing-BridalSet {
+  background-position: 0 -237px;
+}
+.iconKing-Round {
+  background-position: -30px 0;
+}
+.iconKing-Princess {
+  background-position: -30px -30px;
+}
+.iconKing-Pear {
+  background-position: -60px -30px;
+}
+.iconKing-Oval {
+  background-position: -30px -90px;
+}
+.iconKing-Marquise {
+  transform: scale(1.1);
+  background-position: -60px -120px;
+}
+.iconKing-Emerald {
+  background-position: -60px -60px;
+}
+.iconKing-Cushion {
+  background-position: -30px -60px;
+}
+.nav-mobile{
+  display: none;
+}
+.engagement-ring > ul > li {
+  display: flex;
+}
+.header-contact-us > a {
+  color: #310f4c;
+  font-size: 18px;
+}
+/* header end */
+/* accordion start */
+ 
+.content{
+  display: none;
+}
+.content a{ 
+  overflow: hidden;
+  display: none;
+  max-height: 0;
+  display: inline-block;
+
+}
+.content-show a{
+  overflow: hidden;
+  max-height: 9999px;
+ display: inline-block;
+}
+/* .content-show{
+  transition: all 0.5s;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+  max-height: 9999px;
+  display: block;
+} */
+
+.mobile-nav > a {
+  display: flex;
+}
+/* accordion end */
+/* banner start */
+.banner-main {
+  background: #e7eae9;
+}
+.banner-text a.button {
+  padding: 15px 30px; 
+}
+.banner-main .container {
+  max-width: 100%;
+  width: calc(50%  + 480px);
+  margin-left: auto;
+  margin-right: 0;
+}
+.banner-main{
+    position: relative;
+    overflow-x: hidden;
+}
+.banner .banner-img img{
+  display: block;
+}
+.banner .banner-text {
+  width: 35%;
+}
+.banner .banner-img {
+  width: 65%;
+  max-height: 500px;
+  overflow: hidden;
+  max-width: 650px;
+}
+.banner .banner-img img {
+  width: 100%;
+}
+.banner-text > span {
+  padding: 18px 0px 34px;
+  display: inline-block;
+}
+
+/* banner end */
+
+/* Shop diamonds by shape start */
+.ShopDiamondShape-img-text img {
+    width: 80px;
+}
+.ShopDiamondShape-img-text span, .ShopCategory-img-text p, .MostLoved .MostLoved-img-text p {
+    padding-top: 15px;
+    display: inline-block;
+    color: #232323;
+    text-transform: capitalize;
+}
+.ShopDiamondShape-img-text, .ShopCategory-img-text, .MostLoved .MostLoved-img-text{
+    text-align: center;
+}
+.ShopDiamondShape h2, .ShopCategory h2, .MostLoved h2 {
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 90px;
+}
+.ShopDiamondShape.container {
+    padding: 90px 0px;
+}
+.ShopDiamondShape-img-text {
+  width: calc(100%/10 - 20px);
+  padding: 10px;
+}
+.ShopCategory{
+    padding-bottom: 90px;
+    display: block;
+}
+.ShopCategory-img img{
+  width: 160px;
+}
+
+.ShopDiamondShape {
+  background: #fff;
+  padding-bottom: 90px;
+}
+.MostLoved{
+  padding-bottom:65px;
+  display: block;
+}
+.endsSoon-text .earrings{
+    padding: 10px 0px 13px;
+}
+.endsSoon{
+    background: #ede7da;
+    padding: 35px 0 0;
+    margin-bottom: 90px;
+}
+.endsSoon-text {
+  width: 50%;
+  padding-left: 70px;
+}
+.endsSoon-img {
+  width: 50%;
+}
+
+.mobile-ShopDiamondShape-main{
+  display: none;
+}
+.ShopDiamondShape{
+  display: block;
+}
+/* Shop diamonds by shape end */
+/* EternityRings  start*/
+.eternityRings-main{
+background: #bcbebf;
+position: relative;
+}
+.eternityRings-text > span > p {
+  background: none !important;
+  padding: 12px 0 20px;
+}
+.MostLoved .MostLoved-btn{
+    margin: 50px auto 0;
+    text-align: center;
+}
+.MostLoved .MostLoved-btn .button{
+    padding: 13px 60px;
+}
+.MostLoved .MostLoved-img img {
+  width: 98px;
+}
+.MostLoved .MostLoved-img, .ShopCategory .ShopCategory-img {
+  background: #fff;
+  padding: 34px 0px 16px;
+  text-align: center;
+}
+.ShopCategory .ShopCategory-img {
+  padding: 64px 0 30px !important;
+}
+.MostLoved .column-width, .ShopCategory .column-width {
+  width: calc(100%/5 - 0px);
+  padding: 10px;
+  text-align: center;
+}
+.MostLoved .column-width h4, .ShopCategory .column-width h4 {
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.eternityRings-text {
+  width: 35%;
+  position: absolute;
+  left: 73px;
+}
+.eternityRings-img {
+  width: 75%;
+  margin-left: auto;
+}
+.mbl-eternityRings-img{
+  display: none;
+}
+.eternityRings-img img {
+  object-fit: cover;
+  height: 369px;
+  object-position: center -342px;
+  width: 100%;
+  display: block;
+}
+.eternityRings-text p:nth-child(2), .menRings-text p:nth-child(2) {
+  padding: 12px 0px 0;
+  font-weight: 600;
+}
+
+.eternityRings-text p:nth-child(3), .menRings-text p:nth-child(3) {
+  padding: 13px 0 21px;
+  line-height: 25px;
+
+}
+
+.menRings{
+  background: #cbbcb5;
+  
+}
+.menRings .container {
+  max-width: 100%;
+  width: calc(50%  + 570px);
+  margin-left: auto;
+  margin-right: 0;
+  padding: 0 !important;
+}
+
+.menRings-img, .menRings-text {
+  width: 64%;
+}
+.menRings-img img{
+  display: block;
+}
+.menRings .menRings-img img {
+  height: 491px;
+}
+.menRings-text a.button {
+  padding: 11px 47px;
+}
+.menRings-text {
+  max-width: 36%;
+}
+/* EternityRings End */
+
+/* BridalSets start */
+.bridalSets-necklaces {
+  margin: 40px 0;
+}
+
+.bridalSets , .bridalSets-2{
+  position: relative;
+  background: #cbcdc7;
+  width: 49.4%;
+  height: 430px;
+}
+.bridalSets .bridalSets-text {
+  width: 44%;
+  height: 100%;
+  padding: 30px 0 0 30px;
+}
+.bridalSets-2 .bridalSets-text {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.bridalSets .bridalSets-img {
+  width: 56%;
+  height: 100%;
+}
+
+.bridalSets .bridalSets-img img, .bridalSets-2 .bridalSets-img img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+.bridalSets-2 .bridalSets-img {
+  width: 100%;
+  height: 100%;
+}
+.mb-bridalSets-img{
+  display: none;
+}
+.bridalSets-text > span {
+  padding: 15px 0 20px;
+  font-weight: 600;
+  display: inline-block;
+}
+.main-content button.button.active {
+  color: red;
+}
+.single-product {
+  width: 25%;
+  padding: 10px 30px;
+
+}
+.choose-setting {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.buttons-container button.button {
+  margin: 10px;
+}
+.all-pages-data {
+  width: calc(100%/4 - 20px);
+  margin: 10px;
+  text-align: center;
+  position: relative;
+}
+.all-pages-data > a > p {
+  margin: 10px 0 0;
+  line-height: 25px;
+  font-size: 14px;
+}
+.main-btn-setting > .ring:after {
+  content: "";
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  transform: rotate(45deg);
+  right: -18px;
+}
+.main-btn-setting > .ring {
+  width: calc(100%/4 - 60px);
+  margin: 0px 30px;
+  position: relative;
+}
+.ring.Choose-Setting::after {
+  top: 11px;
+}
+.ring.Create-Your-Ring::after {
+  top: -17px;
+}
+.ring.Choose-Diamond::after {
+  top: 10px;
+}
+.ring.Complete-Ring::after {
+  border: none;
+}
+.main-btn-setting {
+  border: 1px solid #ddd;
+}
+
+ .main-btn-setting a {
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-btn-setting .ring .img {
+  max-width: 70px;
+}
+.details-main-btn-setting {
+  margin-top: 40px;
+}
+.main-btn-setting .Complete-Ring {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ShopByStyleMobileSlider-main {
+  display: none;
+}
+.setings-Page-img .all-img1 {
+  background: #fff;
+  max-width: 100% !important;
+  max-height: none !important;
+  padding: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-content h3 {
+  text-align: center;
+}
+.heart-icon svg {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  font-size: 20px;
+  color: #616161;
+}
+/* BridalSets End */
+/* product UI style */
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.detail-page-ring{
+display: flex;
+}
+.product-item{
+border: 1px solid #ccc;
+padding: 20px;
+  margin: 20px;
+}
+.singleProduct .ChooseThisDiamond-5, .singleProduct .ChooseSettings-5{
+display: none;
+}
+.singleProduct a.ChooseSetting > button {
+  background: #310f4c;
+  padding: 17px 97px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+
+p.total-price {
+padding-top: 0 !important;
+font-size: 25px !important;
+font-weight: 600;
+}
+.singleProduct-text-img-text span.diamond-icon img {
+width: 52px;
+}
+.filter-button{
+justify-content: space-between !important;
+text-align: center;
+}
+.filter-button > a{
+max-width: 80px;
+}
+.filter-button p{
+font-size: 14px;
+}
+.filter-button a > img, .mobile-ShopDiamondShape-card1 a > img {
+border-radius: 50px;
+border: 2px solid transparent;
+max-width: 80px;
+margin: 0 auto;
+
+}
+.mobile-ShopDiamondShape-card1 a{
+text-align: center;
+}
+.filter-button a.active > img {
+border: 2px solid #310f4c;
+}
+.filter-button a.active > p{
+color: #310f4c;
+}
+.ChooseSetting h3 {
+padding: 45px 0;
+}
+
+/* end product Ui style */
+/* ============== */
+.all-pages {
+  display: flex;
+  justify-content: space-between;
+  }
+  .card-para {
+  background: red;
+  width: 20%;
+  color: #fff;
+  font-size: 30px;
+  }
+  .main-btn-setting {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  }
+  .main-btn-setting button {
+    margin: 34px !important;
+    padding: 16px 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .browse-setting {
+    width: 100%;
+  }
+  .main-btn-setting button > a {
+    display: flex;
+    align-items: center;
+  }
+  .cart-page-text{
+    text-align: center;
+    padding: 20px 0;
+  }
+  .lab-diamond-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    column-gap: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    margin-top: 60px;
+}
+.lab-diamond-btn > a {
+  color: #333;
+}
+.ShopByStyle {
+  width: 50%;
+  text-align: end;
+  padding-right: 35px;
+}
+.lab-diamond-more-icon {
+  width: 47%;
+  display: flex;
+  justify-content: space-between;
+}
+.lab-diamond-btn .arw {
+  display: flex;
+  column-gap: 10px;
+  font-size: 25px;
+}
+.lab-diamond-btn a {
+  color: #333;
+}
+
+.best-seller {
+  position: absolute;
+  right: 50px;
+}
+
+.best-seller:hover .best-seller-drop-down {
+  opacity: 1;
+}
+.best-seller-drop-down > ul > li > a {
+  padding: 5px 2px;
+}
+.best-seller-main a {
+  color: #333;
+  display: inline-block;
+  padding-right: 0px;
+}
+.best-seller > a:after {
+  border: 2px solid #333;
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  border-left: 0;
+  border-bottom: 0;
+  transform: rotate(-224deg);
+  right: 0px;
+  top: 2px;
+}
+.best-seller-main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  background: #dddddd6b;
+  padding: 5px;
+  margin-top: 32px;
+}
+.best-seller-drop-down {
+  background: #fff;
+  margin-top: 5px;
+  opacity: 0;
+  padding: 15px;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.best-seller > a :hover .best-seller-drop-down {
+  display: none;
+}
+.lab-diamond-btn .ShopByStyle > a:first-child:after {
+  content: "";
+  display: block;
+  width: 1.6px;
+  height: 25px;
+  background-color: #ccc;
+  position: absolute;
+  right: 0;
+  top: -4px;
+  left: 0px;
+  margin: 0 auto;
+}
+  
+  .select-diamond button {
+    background-color: #333;
+    color: #fff;
+    width: 50%;
+    padding: 13px;
+    font-size: 16px;
+    margin: 25px 0;
+  }
+  .item img {
+  width: 200px;
+  }
+  .userData-container {
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .singleProduct img {
+    width: 139px;
+}
+  .tablepopup {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    align-items: center;
+  }
+  .tablepopup img{
+   width: 300px;
+  }
+  .tablepopup p {
+    text-align: left;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+  .select-diamond {
+    background: #33300059;
+    position: relative;
+  }
+  .select-diamond .tablepopup-text > button {
+    color: #fff;
+    font-size: 46px;
+    position: absolute;
+    top: -39px;
+    right: 0;
+    transform: rotate(44deg);
+    background: none;
+    width: auto;
+    cursor: pointer;
+  }
+  .tablepopup-img{
+    width: 50%;
+  }
+  .tablepopup-text{
+    width: 50%;
+  }
+  .popcrossIcon {
+    display: none;
+  }
+  /* =============== */
+  .more-to-explore-main h3 {
+    text-align: center;
+    padding: 60px 0;
+  }
+  .more-to-explore-main h5{
+    color: #232323;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 20px 0;
+  }
+  .accordinan .item {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  .more-to-explore-child {
+    width: calc(100%/3 - 20px);
+    margin: 10px;
+}
+  /* faq */
+.accordinan{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #FFF, #f7f7f7);
+  box-shadow: rgb(0 0 0 / 30%) -2px 0px 25px -12px;
+}
+
+.Accordian-main .title {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+  border-bottom: 1px solid #d0c9c9;
+  padding: 0 15px;
+}
+.Accordian-main .nonActive{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+  border-bottom: 1px solid #d0c9c9;
+  padding: 0 15px;
+  background-color: #310f4c;
+}
+.Accordian-main .title span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.Accordian-main .title p {
+  color: black;
+  padding: 16px 0px;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+.Accordian-main .item{
+  width: 100%;
+}
+.Accordian-main .content p{
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+
+  display: none;
+  max-height: 0;
+
+}
+.Accordian-main .content-show{
+  transition: all 0.5s;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+  max-height: 9999px;
+}
+.Accordian-main .faq{
+  padding-top: 0px;
+  padding-bottom: 74px;
+}
+.Accordian-main.bg-salmon{
+  background-color: #310f4c;
+}
+.content-show p{
+  transition: all 0.5s;
+  color: black;
+  overflow: hidden;
+  max-height: 9999px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.Accordian {
+  padding-top: 87px;
+}
+.Accordian-main{
+  padding-top: 70px;
+}
+.Accordian-main .faq-img-text{
+  text-align: center;
+}
+.Accordian-main .faq-img-text h2{
+  padding-top: 15px;
+  padding-bottom: 46px;
+}
+
+/* faq end*/
+/* =========================== */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.main-content-p p {
+  background: #3e9f8e;
+  color: #fff;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  padding: 4px 10px;
+  min-width: 100px;
+  min-height: 50px;
+  margin: 4px 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category {
+  color: #64748b;
+  font-size: 10px;
+}
+.singleProduct .metal-type-color {
+  display: flex;
+  column-gap: 15px;
+  padding-top: 15px;
+}
+.metal-type-color > a {
+  width: 35px;
+  height: 35px;
+  display: block;
+  border-radius: 50px;
+  border: 2px solid transparent;
+}
+.metal-type-color > a:hover{
+  border: 2px solid #310f4c;
+
+}
+.metal-type-color > a:first-child{
+  background: #d8d4cf;
+}
+.metal-type-color > a:nth-child(2){
+  background: #dbb666;
+}
+.metal-type-color > a:last-child{
+  background: #e4a581;
+}
+.singleProduct .all-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 12px;
+  margin-right: 83px;
+}
+.singleProduct .metal-type {
+  margin: 30px 0px;
+}
+.singleProduct video {
+  max-width: 614px;
+}
+.singleProduct .details-videos {
+  min-height: 620px;
+}
+.metal-type-color >  a.selected {
+  border: 2px solid #310f4c;
+}
+.main-btn-setting button img {
+  width: 70px;
+  margin-left: 11px;
+  height: auto;
+}
+
+.star-rating > span{
+  color: #310f4c;
+}
+.star-rating {
+  display: flex;
+  column-gap: 5px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+.prong-type .img {
+  max-width: 40px;
+  
+}
+.prong-type .img > img:hover{
+border: 2px solid #310f4c;
+
+}
+.prong-type .img > img{
+  border-radius: 100px;
+  border: 2px solid transparent;
+}
+.prong-type-img{
+  display: flex;
+  column-gap: 15px;
+}
+.Setting-Carat > a {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  border-radius: 50px;
+  color: #232323;
+  border: 2px solid #ddd;
+}
+.Setting-Carat > a:hover , .Diamond-Original > a:hover{
+  border: 2px solid #310f4c;
+}
+.Setting-Carat {
+  display: flex;
+  column-gap: 20px;
+}
+.Diamond-Original > a {
+  padding: 12px 45px;
+  display: inline-block;
+  border-radius: 20px;
+  color: #232323;
+  border: 2px solid #ddd;
+}
+.Diamond-Original {
+  display: flex;
+  column-gap: 20px;
+}
+.singleProduct-text > span > p {
+  padding: 15px 0;
+  font-size: 15px;
+}
+.shape-diamond .shape-main {
+  padding: 15px 0 0;
+}
+.shape-diamond > span {
+  font-size: 18px;
+  color: #232323;
+}
+.prong-type > span, .Setting-Carat-main > span, .Diamond-Original-main > span {
+  padding: 0 0 15px;
+  display: inline-block;
+}
+.Setting-Carat-main {
+  padding: 18px 0;
+}
+.Diamond-Original-main {
+  padding-bottom: 20px;
+}
+/* =========================== */
+/* cart page style */
+.cart-page-container {
+  display: flex;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.cart-page-container table {
+  flex: 65%;
+  border-collapse: collapse;
+}
+.cart-page-container table td {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+.price-details {
+  flex: 35%;
+  margin: 0px 30px;
+}
+.price-details .adjust-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.price-details .adjust-price span {
+  font-size: 20px;
+}
+.singleProduct-text > p > span {
+  background: #a79494;
+  width: 30px;
+  height: 29px;
+  border-radius: 100%;
+  color: #fff;
+  margin: 10px;
+  padding: 5px;
+}
+.singleProduct {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+.singleProduct iframe {
+  max-width: 610px;
+}
+
+.singleProduct-text > p:nth-child(even) {
+  padding-top: 19px;
+}
+.singleProduct-text {
+  max-width: 40%;
+}
+.singleProduct-img {
+  width: 60%;
+}
+/* end cart page style */
+/* footer start */
+
+footer.footer .footer-main {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  padding: 40px 0 40px;
+}
+.ftr-contact-ul {
+  width: 17%;
+}
+.ftr-contact-form {
+  width: 30%;
+}
+.footer form {
+    position: relative;
+    margin: 18px 0px 30px;
+}
+.footer .email input {
+  width: 100%;
+  max-width: 100%;
+  min-height: 50px;
+  padding: 15px;
+}
+.submit-btn {
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+.submit-btn .button {
+    padding: 14px 17px;
+}
+.ftr-icons span > a {
+  font-size: 25px;
+  color: #333333;
+  display: flex;
+}
+.ftr-contact{
+    align-items: start;
+}
+.ftr-icons{
+padding-right: 15px;
+}
+.ftr-contact.flex > ul > h4 > a {
+  padding-bottom: 7px;
+  color: #232323;
+  display: inline-block;
+  font-weight: 600;
+}
+ul.ftr-contact-form > h4 {
+  padding-bottom: 12px;
+}
+.ftr-contact.flex ul li > a{
+    font-size: 14px;
+letter-spacing: 0px;
+line-height: 28px;
+color: #232323;
+}
+.copy-right {
+  text-align: center;
+    padding: 23px 0px;
+}
+.ftr-desktop{
+  display: block;
+}
+.mobile-footer{
+  display: none;
+}
+.contact-main{
+  display: none;
+}
+/* footer end */
+@media(min-width: 2250px){
+
+  .bridalSets, .bridalSets-2 {
+    height: 60vh;
+}
+.bridalSets .bridalSets-img, .bridalSets-2 .bridalSets-img{
+  height: 100%;
+}
+.menRings .menRings-img img {
+  height: 50vh;
+}
+}
+@media(max-width: 1199px){
+  .container{
+    padding: 0 15px !important;
+  }
+  .banner-main .container {
+    padding: 0 !important;
+    padding-left: 15px !important;
+}
+  .menRings-text{
+    padding-left: 15px;
+  }
+  .header-icons {
+    padding-left: 115px;
+}
+.eternityRings-img img {  
+  object-position: center -255px;  
+}
+.bridalSets .bridalSets-img img{
+  object-fit: initial;
+}
+
+}
+
+@media(max-width: 1120px){
+  .singleProduct video {
+    max-width: 500px;
+}
+.singleProduct .details-videos {
+  min-height: 510px;
+}
+.singleProduct img {
+  width: 154px;
+}
+}
+@media(max-width: 991px){
+  .container{
+    width: 100%;
+  }
+  .button {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+h1 {
+  font-size: 40px;
+}
+h2{
+  font-size: 30px !important;
+}
+h3{
+  font-size: 25px !important;
+}
+p{
+  line-height: 25px;
+}
+/* navbar */
+nav.res-nav, .nav{
+  display: none;
+}
+.nav-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.header-top{
+  display: none;
+}
+.nav-mobile-logo {
+  width: 100px;
+}
+.nav-mobile-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+}
+.nav-mobile-icons .bell-icon a > span {
+  position: absolute;
+  top: -9px;
+  right: -5px;
+  background: red;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  padding-top: 1px;
+}
+.nav-mobile-icons .bell-icon {
+  position: relative;
+}
+.nav-mobile-contact-us {
+  width: 100%;
+  margin-top: 20px;
+}
+header.header .container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+nav.nav > ul {
+  /* column-gap: 45px; */
+  justify-content: center;
+  display: inline;
+}
+.navabar-icons2 {
+  display: none;
+}
+
+nav.mobile-nav > ul > li {
+  position: relative;
+  z-index: 11;
+}
+li.engagement .engagement-ring {
+  display: flex;
+  position: static;
+}
+.engagement-ring > ul {
+  width: calc(100%/2 - 20px);
+  margin: 9px;
+}
+ .non-engagement .engagement-ring{
+  display: none ;
+}
+nav.mobile-nav > ul {
+  height: 500px;
+  overflow-y: scroll;
+}
+.engagement-ring.flex:before {
+  content: "";
+  background: #fff;
+  position: absolute;
+  width:100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+}
+.header {
+  padding-bottom: 16px;
+}
+.close-icons {
+  background: #551a8b;
+  padding: 5px 5px;
+  color: #fff;
+}
+.HamburgerMenu-icons{
+  color: #551a8b;
+  padding: 5px 5px;
+
+}
+.allnav-menu > ul > li > a {
+  padding: 10px 0;
+  display: inline-block;
+  margin-right: 10px;
+}
+.mobile-nav .content-show a {
+  margin-right: 10px;
+}
+nav.mobile-nav > ul > li > span{
+  padding-left: 15px;
+}
+/* =========== */
+.mobile-nav-main .allnav, .res-nav-main .allnav {
+  transform: translateZ(0);
+  top: 44px;
+  display: block!important;
+  width: 80%;
+  min-width: 140px;
+  max-width: 440px;
+  transition: transform .4s ease;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background: #fff;
+  height: 100vh;
+  padding-left: 15px;
+}
+.res-nav-main .allnav{
+  transform: translate(-100%); 
+}
+.contents-main, .contents-show-main{
+  background: inherit;
+    -webkit-overflow-scrolling: touch;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 0 15px;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    -webkit-transition: -webkit-transform .4s ease;
+    -moz-transition: -moz-transform .4s ease;
+    -ms-transition: -ms-transform .4s ease;
+    -o-transition: -o-transform .4s ease;
+    transition: transform .4s ease;
+    
+}
+.contents-show-main{
+  -webkit-transform: translate3d(-100%,0,0);
+    -moz-transform: translate3d(-100%,0,0);
+    -ms-transform: translate3d(-100%,0,0);
+    -o-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+}
+.content-show.main-content {
+  padding-top: 15px;
+}
+.nav-mobile-icons a {
+  display: flex;
+  font-size: 20px;
+}
+/* navbar end */
+.header-top, .header-icons, nav.nav > ul, .flex {
+  justify-content: flex-start;  
+}
+.ftr-contact-ul {
+  width: calc(100%/4 - 20px);
+  margin: 10px;
+}
+.ftr-contact-form {
+  width: 100%;
+  max-width: 48%;
+  margin: 0 10px;
+}
+
+
+footer.footer {
+  padding: 0;
+}
+
+.mobile-ShopDiamondShape-card1 .ShopDiamondShape-img-text {
+  width: 100%;
+}
+.ShopDiamondShape-img-text img {
+  margin: 0 auto;
+}
+.ShopDiamondShape h2, .ShopCategory h2, .MostLoved h2 {
+  padding-bottom: 40px;
+  padding-top: 60px;
+}
+.ShopCategory {
+  padding-bottom: 60px;
+  display: none;
+}
+.endsSoon {
+  margin-bottom: 60px;
+}
+.endsSoon-text {
+  padding-left: 50px;
+}
+.eternityRings-img img {
+  height: 283px;
+  object-position: center -246px;
+}
+.eternityRings-text {
+  left: 20px;
+}
+
+.ftr-icons {
+  column-gap: 25px;
+  row-gap: 10px;
+}
+.header-logo {
+  max-width: 100px;
+}
+
+.bridalSets-necklaces.flex {
+  justify-content: space-between;
+}
+
+.menRings .menRings-text {
+  padding-left: 15px;
+}
+.MostLoved .MostLoved-img-text img {
+  width: 90px;
+  height: 147px;
+  object-fit: contain;
+}
+.MostLoved .column-width, .ShopCategory .column-width {
+  width: calc(100%/3 - 0px);
+  padding: 10px;
+  text-align: center;
+}
+.ftr-contact-form {
+  margin: 0;
+}
+.bridalSets, .bridalSets-2{
+  height: auto;
+}
+.bridalSets .bridalSets-text {
+  padding: 30px 0 0 15px;
+}
+
+.menRings .menRings-img img {
+  height: 350px;
+}
+.bridalSets-2 .bridalSets-text {
+  left: 15px;
+}
+ .bridalSets.flex {
+  align-items: flex-start;
+}
+.submit-btn .button {
+  padding: 15px 17px;
+}
+
+/* slider */
+.mobile-ShopDiamondShapeSlider .slick-next {
+  right: 0 !important;
+}
+.mobile-ShopDiamondShapeSlider .slick-prev {
+  left: -9px !important;
+}
+ button.slick-arrow.slick-next:after, button.slick-arrow.slick-prev:after {
+  content: "";
+  color: #fff;
+  position: absolute;
+  top: 4px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  width: 9px;
+  height: 9px;
+  z-index: 111;
+  transform: rotate(45deg);
+  right: 2px;
+  z-index: 111;
+}
+.mobile-ShopDiamondShapeSlider .slick-list {
+  z-index: -1;
+}
+
+.mobile-ShopDiamondShape h2{
+  text-align: center;
+  padding-bottom: 20px;
+}
+button.slick-arrow.slick-prev:after{
+  transform: rotate(226deg);
+  right: -2px;
+  z-index: 111;
+}
+
+.mobile-ShopDiamondShapeSlider .slick-prev:before, .slick-next:before, .ShopByStyleMobileSlider-main .slick-prev:before{  
+  background: #310f4c;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 0 !important;
+}
+.mobile-ShopDiamondShape-main {
+  display: block;
+  background: #fff;
+  position: relative;
+  padding: 60px 0;
+  z-index: 0;
+}
+.ShopDiamondShape{
+  display: none;
+}
+.mobile-ShopDiamondShapeSlider .slick-slider.slick-initialized {
+	z-index: 11;
+}
+.mobile-ShopDiamondShapeSlider .slick-prev, .mobile-ShopDiamondShapeSlider .slick-next { 
+  top: 42%;  
+}
+.mobile-Most-Loved-Engagement, .mobile-ShopCategory{
+  background: none;
+}
+.mobile-Most-Loved-Engagement .MostLoved-img{
+  background: #fff;
+  padding: 17px 0px;
+}
+.mobile-ShopCategory .MostLoved-img {
+  padding: 40px 20px;
+  background: #fff;
+}
+.mobile-ShopCategory .MostLoved-img img{
+  width: 100%;
+}
+.MostLoved {
+  display: none;
+}
+/* slider */
+.header-search input {
+  width: 100%;
+  height: 38px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.header-search {
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+  z-index: -1;
+}
+.header-search .search-icon {
+  position: absolute;
+  top: 8px;
+  right: 11px;
+  font-size: 22px;
+}
+.ShopByStyleMobileSlider-main {
+  display: block;
+}
+.filter-button {
+  display: none !important;
+}
+.ChooseSetting h3 {
+  padding: 0px 0;
+}
+.main-btn-setting button {
+  margin: 20px !important;
+}
+.more-to-explore-main h3 {
+  padding: 40px 0;
+}
+.singleProduct-img {
+  width: 100%;
+}
+.singleProduct-text {
+  max-width: 100%;
+  padding: 60px 14px;
+}
+.singleProduct .details-videos {
+  text-align: center;
+}
+.singleProduct .all-images {
+  justify-content: center;
+}
+.singleProduct video {
+  max-width: 100%;
+}
+.singleProduct .details-videos {
+  min-height: auto;
+}
+.singleProduct img {
+  width: 217px;
+}
+.shape-diamond .shape-main{
+  max-width: 50%;
+}
+.singleProduct {
+  padding-bottom: 0;
+}
+.shape-diamond > span {
+  font-size: 16px;
+}
+.engagement-ring {
+  display: flex;
+  padding-top: 10px;
+}
+.mobile-nav li.title {
+  align-items: center;
+  margin-bottom: 10px;
+}
+.mobile-nav .content-show > ul > li > a {
+  padding: 0;
+}
+}
+
+@media(max-width: 767px){
+  .bridalSets-img img {
+    height: 100%;
+    object-position: initial;
+}
+.flex.menRings-main {
+  flex-direction: column-reverse;
+}
+.menRings-img, .menRings-text {
+  width: 100%;
+}
+.menRings-img {
+  width: 104vw;
+  margin-left: -14px;
+}
+.ftr-contact-form {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 10px;
+}
+.banner-text > p {
+  padding: 15px 0px;
+}
+
+.menRings .menRings-text {
+  padding: 40px 15px 40px 15px;
+  max-width: 100%;
+  text-align: center;
+}
+.eternityRings-text p:nth-child(3), .menRings-text p:nth-child(3) {
+  padding: 5px 0 25px;
+}
+.eternityRings-text p:nth-child(2), .menRings-text p:nth-child(2) {
+  padding: 15px 0px 10px;
+}
+.bridalSets.flex {
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+.bridalSets, .bridalSets-2 {
+  width: 100%;
+}
+.ShopDiamondShape {
+  padding-bottom: 60px;
+}
+.menRings .menRings-img img {
+  height: auto;
+}
+.ShopDiamondShape-img-text img {
+  width: 70px;
+}
+.banner .banner-text, .banner .banner-img{
+  width: 100%;
+}
+.banner .banner-img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.banner.flex {
+  flex-direction: column-reverse;
+}
+.banner-main .container {
+  padding: 0 !important;
+}
+.banner-text {
+  text-align: center;
+  padding: 40px 15px;
+}
+
+.ftr-desktop{
+  display: none;
+}
+.mobile-footer{
+  display: block;
+}
+.mobile-footer ul.ftr-contact-ul {
+  width: 100%;
+}
+.mobile-footer ul.ftr-contact-ul > h4 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+.mobile-footer ul.ftr-contact-ul {
+  padding: 20px 0px 0px;
+  margin: 0;
+  border-top: 2px solid #ddd;
+}
+.mobile-footer .mobile-ftr-contact {
+  padding-top: 15px;
+}
+.mobile-footer ul.ftr-contact-form {
+  padding: 30px 0 40px;
+  border-top: 2px solid #ddd;
+  margin: 0;
+}
+.contact-main {
+  display: block;
+  border-top: 2px solid #ddd;
+}
+.contact{
+  display: flex;
+  justify-content: space-around;
+}
+.contact-main h2 {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 40px;
+  font-size: 30px !important;
+}
+.contact-main {
+  display: block;
+  padding-bottom: 40px;
+}
+.contact-main .contact-call > a, .contact-main .contact-email > a, .contact-main .contact-chat > a {
+  font-size: 25px;
+  color: #310f4c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+footer.footer .footer-main {
+  border-top: none;
+}
+.mobile-ftr-contact ul.content-show {
+  border-top: 2px solid #ddd;
+  padding: 20px 15px;
+}
+.mobile-footer ul.ftr-contact-ul > h4.active > a{
+  color: #654b79;
+}
+.mobile-footer .ftr-contact.flex ul li > a {
+  font-size: 17px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  color: #232323;
+}
+.mobile-footer ul.ftr-contact-ul span {
+  color: #310f4c;
+}
+.all-pages-data {
+  width: calc(100%/3 - 20px);
+  margin: 10px;
+}
+.eternityRings-text, .eternityRings-img {
+  width: 100%;
+  position: static;
+}
+.eternityRings-main {
+  flex-direction: column-reverse;
+}
+.eternityRings-img img {
+  height: 100%;
+  object-position: center;
+  width: 100%;
+}
+.mbl-eternityRings-img{
+  display: block;
+}
+.dsk-eternityRings-img{
+  display: none;
+}
+.eternityRings-text {
+  padding: 15px;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.Accordian-main .title p {
+  font-size: 15px;
+  line-height: normal;
+}
+.Accordian-main .faq {
+  padding-bottom: 60px;
+}
+footer.footer .footer-main {
+  padding: 0px;
+}
+}
+@media(max-width: 639px){
+  h1 {
+    font-size: 30px;
+  }
+  h2{
+    font-size: 25px !important;
+  }
+  h3{
+    font-size: 22px !important;
+  }
+  .ftr-contact-ul {
+    width: calc(100%/2 - 14px);
+    margin: 7px;
+}
+.ShopCategory-img-text {
+  width: calc(100%/2 - 20px);
+  margin: 10px;
+}
+.ShopDiamondShape h2, .ShopCategory h2, .MostLoved h2 {
+  padding-bottom: 10px;
+  padding-top: 40px;
+}
+.endsSoon-text {
+  padding-left: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.endsSoon-img {
+  width: 100%;
+}
+
+.singleProduct-text {
+  padding: 40px 14px;
+}
+
+.endsSoon {
+  margin-bottom: 40px;
+}
+.bridalSets-necklaces.flex {
+  row-gap: 15px;
+}
+.bridalSets {
+  position: relative;
+  background: #cbcdc7;
+  width: 100%;
+}
+
+.ShopDiamondShape-img-text img {
+  width: 70px;
+}
+
+.ShopCategory {
+  padding-bottom: 40px;
+}
+
+.ftr-contact-form {
+  margin: 0;
+}
+.ftr-contact > ul {
+ margin: 0;
+}
+.button {
+  font-size: 14px;
+  padding: 14px 52px !important;
+}
+.submit-btn .button {
+  padding: 16px 20px !important;
+}
+.MostLoved .MostLoved-btn .button {
+  padding: 13px 40px !important;
+}
+.banner-text a.button {
+  padding: 19px 43px !important;
+}
+.MostLoved .column-width, .ShopCategory .column-width {
+  width: calc(100%/2 - 0px);
+}
+.MostLoved .MostLoved-btn {
+  margin: 40px auto 0;
+}
+.eternityRings .container {
+  padding: 0px !important;
+}
+
+.bridalSets-2 .bridalSets-text {
+  position: static;
+  width: 100%;
+  padding: 40px 15px 40px 15px;
+  text-align: center;
+}
+.bridalSets .bridalSets-text {
+  padding: 40px 15px 40px 15px;
+  width: 100%;
+  text-align: center;
+}
+.bridalSets .bridalSets-img {
+  width: 100%;
+  object-position: center;
+  width: 104vw;
+  margin-left: -14px;
+}
+.bridalSets.flex {
+  flex-direction: column-reverse;
+}
+.dsk-bridalSets-img{
+  display: none;
+}
+.mb-bridalSets-img{
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.bridalSets-img .mb-bridalSets-img img, .bridalSets-2 .mb-bridalSets-img img{
+ width: 100%;
+ margin: 0 auto;
+}
+.mb-bridalSets-img img {
+  width: 100%;
+}
+.Accordian-main .faq {
+  padding-bottom: 40px;
+}
+.more-to-explore-child {
+  width: calc(100%/2 - 20px);
+  margin: 10px;
+}
+.singleProduct {
+  padding-bottom: 0;
+}
+}
+@media(max-width: 479px){
+  .ShopDiamondShape-img-text {
+    width: calc(100%/3 - 0px);
+    padding: 15px 10px;
+}
+.all-pages-data {
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+}
+.engagement-ring > ul {
+  width: 100%;
+}
+.nav-mobile-logo {
+  width: 90px;
+}
+.nav-mobile-icons {
+  
+  column-gap: 15px;
+}
+.MostLoved .column-width, .ShopCategory .column-width {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 20px;
+}
+.MostLoved .MostLoved-btn {
+  margin: 15px auto 0;
+}
+.ShopDiamondShape h2, .ShopCategory h2, .MostLoved h2 {
+  padding-bottom: 20px;
+}
+
+.mobile-ShopDiamondShape-main {
+  padding: 40px 0;
+}
+.eternityRings-img img {
+  height: auto;
+  object-position: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.more-to-explore-child {
+  width: calc(100%);
+  margin: 0;
+}
+.singleProduct a.ChooseSetting > button {
+  padding: 15px 45px;
+ 
+}
+.Diamond-Original > a {
+  padding: 10px 24px;  
+  font-size: 14px;
+}
+nav.mobile-nav.allnav {
+  min-height: 500px;
+  overflow-y: scroll;
+}
+}
